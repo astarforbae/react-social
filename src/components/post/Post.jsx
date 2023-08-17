@@ -1,6 +1,7 @@
 import "./post.css";
 import { MoreVert } from "@material-ui/icons";
 import {Users} from "../../dummyData";
+import { useState } from "react";
 
 export default function Post(props) {
   const [like, setLike] = useState(props.post.like);
