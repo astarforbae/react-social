@@ -48,19 +48,19 @@ export default function Rightbar(props) {
         <h4 className="rightbarTitle">User friends</h4>
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
-            <img src="assets/person/1.jpg" alt="" className="rightbarFollowingImg"/>
+            <img src="assets/person/1.jpg" alt="" className="rightbarFollowingImg" />
             <span className="rightbarFollowingName">John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img src="assets/person/1.jpg" alt="" className="rightbarFollowingImg"/>
+            <img src="assets/person/1.jpg" alt="" className="rightbarFollowingImg" />
             <span className="rightbarFollowingName">John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img src="assets/person/1.jpg" alt="" className="rightbarFollowingImg"/>
+            <img src="assets/person/1.jpg" alt="" className="rightbarFollowingImg" />
             <span className="rightbarFollowingName">John Carter</span>
           </div>
           <div className="rightbarFollowing">
-            <img src="assets/person/1.jpg" alt="" className="rightbarFollowingImg"/>
+            <img src="assets/person/1.jpg" alt="" className="rightbarFollowingImg" />
             <span className="rightbarFollowingName">John Carter</span>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function Rightbar(props) {
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-        <ProfileRightbar />
+        {props.profile ? <ProfileRightbar /> : <HomeRightbar />}
       </div>
     </div>
   )
